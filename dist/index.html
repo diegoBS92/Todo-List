@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body >
+    <div class="content">
+        <div class="side">
+            <div class="addtodo">
+                <div>
+                    <button class="btnadd">Add todo</button>
+                </div>
+                <div class='projects'>
+                    <div class="addedprojects">
+                        <div><button class="addproject">add new project</button></div>
+                        <div>projects:</div>                   
+                    </div>
+                    <div class="displayprojects"></div>
+                    
+                </div>
+                
+            </div>
+        </div>
+        <div class="main">
+            <div class="displaytodos">
+                
+                
+            </div>
+        </div>
+        <dialog class="dialognewtodo">
+            <form action="" class="todoform">
+                <label for="todoarray">
+                    Select a project
+                </label>
+                <select name="todoarray" id="todoarray"></select>
+                <input class="title" type="text" placeholder="title">
+                <input class="description" type="text" placeholder="description">
+                <input class="date" type="date">
+                <select name="priority" id="priority">
+                    
+                    <option value="low">low</option>
+                    <option value="medium">medium</option>
+                    <option value="high">high</option>
+                </select>
+                <button class="submit" type="button">submit</button>
+                
+            </form>
+        </dialog>
+        <dialog class="dialognewproject">
+            <input type="text" class="newproject" placeholder="New project name">
+            <button class="submitproject" type="button">submit</button>
+        </dialog >
+    </div>
+    <script src="./bundle.js" defer></script>
+</body>
+</html>

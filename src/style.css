@@ -1,0 +1,86 @@
+body {
+    margin: 0
+}
+* {
+    box-sizing: border-box;
+}
+
+.content {
+    display: grid;
+    grid-template: 1fr / 1fr 2fr;
+    background-color: aqua;
+    height: 90vh;
+    width: 90vw;
+}
+
+.side {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+}
+.addtodo {
+    display: flex;
+    flex-direction: column;
+}
+.projects{
+    display: flex;
+    flex-direction: column;
+}
+.addedprojects {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.main {
+    background-color: aliceblue
+}
+
+.project {
+    display: flex;
+}
+.todo, .todoshead {
+    display: grid;
+    grid-template: 1fr / repeat(6, 1fr);
+    border-bottom: 1px solid gray;
+    align-items: center;
+}
+
+.todoshead div {
+    font-weight: bold;
+    border: 1px solid black;
+}
+
+*[type ='checkbox'] {
+    height: 15px;
+}
+
+
+.todoform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    gap: 10px;
+    background-color: antiquewhite;
+}
+
+.displaytodos {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.checked {
+    text-decoration: line-through;
+    color: rgb(19, 207, 19);
+}
+dialog {
+    position: absolute;
+    background-color: black;
+}
+input, select {
+    padding: 5px;
+    margin: 5px 5px;
+}
