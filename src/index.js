@@ -39,8 +39,7 @@ let mainarray = [
     
     }]
 
-    let mainarray_deserialized = JSON.parse(localStorage.getItem('myarray'))
-    mainarray = mainarray_deserialized
+   
     
 
 //constructor of every added todo
@@ -53,13 +52,8 @@ class Todoitem {
     }
 }
     
+console.log(mainarray)
 displayhome()
-
-function updateLocalStorage() {
-
-    let mainarray_serialized = JSON.stringify(mainarray)
-    localStorage.setItem('myarray', mainarray_serialized)
-}
 
 function displayhome() {
     mainarray.forEach(element => {
@@ -138,7 +132,7 @@ function displaytodosfunction(e) {
         maindiv.classList.add('todo')
         displaytodos.appendChild(maindiv)
     }  
-    updateLocalStorage()  
+    
 }
 
 function addprojectfunction(){
@@ -171,7 +165,7 @@ function addprojectfunction(){
     displayprojects.appendChild(maindiv)
 
     addoption(newproject.value)
-    updateLocalStorage()
+   
     dialogproject.close()
 }
 
@@ -204,7 +198,7 @@ subbtn.addEventListener('click', () => {
     mainarray.forEach((element) => {
         if(element.maintitle == selectform.value) element.todos.push(obj)
     })
-    updateLocalStorage()
+    
     dialogtodo.close()
 
 })
