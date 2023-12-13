@@ -59,6 +59,7 @@ function displayhome() {
     mainarray.forEach(element => {
         let div = document.createElement('div')
         div.textContent = element.maintitle
+        div.classList.add('active')
         displayprojects.appendChild(div)
 
         addoption(div.textContent)
@@ -157,7 +158,7 @@ function addprojectfunction(){
         if(obj.maintitle == id) index = i
         })
         mainarray.splice(index, 1)
-        updateLocalStorage()
+        
     })
     maindiv.appendChild(divtitle)
     maindiv.appendChild(erasebtn)
